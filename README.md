@@ -1,6 +1,6 @@
 <h1>Login to ELMS using Selenium</h1>
 
-    Description: Basic python script to login to ELMS as a UMD student using Selenium. Opens class based on user input to zoom page of class, and clicker (if necessary). Used it to open my classes before online classes started each day during the 2020 pandemic. Added comments throughout to make it easier to customize for your own classes. 
+Description: Basic python script to login to ELMS as a UMD student using Selenium. Opens class based on user input to zoom page of class, and clicker (if necessary). Used it to open my classes before online classes started each day during the 2020 pandemic. Added comments throughout to make it easier to customize for your own classes. 
 
 **Requirements:**
 - [Python](https://www.python.org/downloads/)
