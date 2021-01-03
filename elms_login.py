@@ -56,7 +56,7 @@ def login_umd_zoom():
     # Open new tab & log in to UMD Zoom Acc
     driver.execute_script("window.open('https://umd.zoom.us/');")
 
-    # Switches driver to new tab opened so we can interact w/ the new tab
+    # Switches driver to new tab opened so we can interact w/ the zoom tab
     driver.switch_to.window(driver.window_handles[1])
 
     # Click on the sign in page to log into the UMD Zoom page
@@ -95,13 +95,13 @@ def open_elms_course_page():
     #
     # Ex:
     #   if in course tab: CMSC131-0402,0403,0404,0405,0406,0407,0408,0401: ........
-    #   use 'CMSC131' in 'find_element_by_partial_link_text'ƒ
+    #   use 'CMSC131' in 'find_element_by_partial_link_text'
 
     # Depending on input opens up given class
     if course_name == 'astr340':
         driver.find_element_by_partial_link_text('ASTR340').click()
-        login_umd_zoom() # TODO: Do you need zoom open for this class? Then uncomment
-        open_clickers_page() # TODO: Does this class need clickers open? Then uncomment
+        # login_umd_zoom() # TODO: Do you need zoom open for this class? Then uncomment
+        # open_clickers_page() # TODO: Does this class need clickers open? Then uncomment
     elif course_name == 'cmsc433':
         driver.find_element_by_partial_link_text('CMSC433').click()
         open_clickers_page()
